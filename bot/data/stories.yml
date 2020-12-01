@@ -28,3 +28,17 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: stock
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: stock
+  - action: action_stock_info
+  
+- story: news
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: news
+  - action: action_news_info
